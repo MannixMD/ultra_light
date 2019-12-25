@@ -137,7 +137,7 @@
 		<a id="unread" class="anchor"<!-- IF S_UNREAD_VIEW --> data-url="{postrow.U_MINI_POST}"<!-- ENDIF -->></a>
 	<!-- ENDIF -->
 	<div id="p{postrow.POST_ID}" class="post has-profile <!-- IF postrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF --><!-- IF postrow.S_POST_DELETED --> deleted<!-- ENDIF --><!-- IF postrow.POSTER_WARNINGS --> warned<!-- ENDIF -->">
-		<!-- IF postrow.S_ONLINE and not postrow.S_POST_HIDDEN --><div class="online2"><img src="./styles/ultra_light/theme/en/icon_user_online.png" width="58" height="58" alt="Online" title="Online"></div><!-- ENDIF -->
+		<!-- IF postrow.S_ONLINE and not postrow.S_POST_HIDDEN --><div class="online2"></div><!-- ENDIF -->
 		<div class="inner">
 
 		<dl class="postprofile" id="profile{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>

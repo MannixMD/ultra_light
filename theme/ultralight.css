@@ -1,3 +1,11 @@
+/* Font LetterGothicStd */
+@font-face {
+	font-family: 'LetterGothicStd';
+	src: 	url('font/LetterGothicStd.otf');
+	font-weight: normal;
+	font-style: normal;
+	cursor:context-menu;
+}
 /* HEADER */
 .wrap {
     padding: 0;
@@ -34,10 +42,13 @@
     background-color: transparent;
     background-image: none;
 }
-
+html {
+	background-color: #252525;	
+}
 body {
     color: #c8d5e9;
-    background: #252525 url("./images/fond.jpg") no-repeat top center;
+	background-color: #252525;	
+    background: url("./images/fond.jpg") no-repeat top center;
     background-size: 100%;
 }
 ul.navlinks {
@@ -105,7 +116,7 @@ div.rules, p.post-notice {
     background-color: #1f3c6b;
     color: #bcc9dd;
 }
-.bg1, .bg2 {
+.bg1, .bg2, .bg3 {
     background-color: #1f3c6b;
 }
 
@@ -114,11 +125,10 @@ div.rules, p.post-notice {
     border: 1px solid #000;
     padding: 7px;
     margin: 0 auto;
-    position: relative;
 }
 
 .postbody, .content, .post:target .content {
-    color: #d9e0ea;
+    color: #bcc9de;
 }
 .postprofile strong {
     color: #fff;
@@ -273,7 +283,8 @@ dl.faq dt {
     margin: 0;
     padding: 0;
     position: relative;
-    text-align: right;
+    /* text-align: right; */
+    float: right;
 }
 .block_options:hover .icone_options {
     background: transparent url("./images/options.png") no-repeat 0 -23px;
@@ -393,6 +404,7 @@ fieldset.polls dd {
 .attachbox {
     background-color: #1F3C6B;
     border-color: #000000;
+    font-size: 10px;
 }
 
 dl.file dd {
@@ -476,6 +488,10 @@ blockquote blockquote blockquote {
 }
 
 /* CP */
+.pmlist li.pm_foe_colour, .pm_foe_colour {
+    border-color: #c50000;
+}
+
 .cp-main h2 {
     color: #a1cef1;
 }
@@ -763,6 +779,9 @@ a.header-avatar span:after{
     top: -13px;
     right: 0;
 }
+.navigation .active-subsection a:hover{
+	color: #fff;
+}
 
 /* Buttons */
 a.button2, input.button2, input.button3 {
@@ -799,7 +818,11 @@ a.button1, input.button1, input.button3, a.button2, input.button2 {
 .button .icon, .button-secondary {
     color: #bcc9dd;
 }
-
+.nav-footer li a.button {
+	background-image: none;
+    border: none;
+    background-color: transparent;
+}
 .tabs .tab > a, tabs .tab > a:hover, .minitabs .tab > a {
     box-shadow: none;
     color: #c8d5e9;
@@ -931,6 +954,13 @@ select {
 dl.row-item {
     background-size: 21px;
 }
+.postprofile dt, .avatar img {
+	margin: auto;
+}
+
+.postprofile .avatar {
+	float: none;
+}
 /* Responsive */
 @media (max-width: 700px){
 .wrap {
@@ -949,6 +979,18 @@ dl.row-item {
 .postprofile dt {
     text-align: left;
 }
+.postprofile .avatar {
+	float: left;
+}
+.postbody{
+	width: 100%;
+}
+.postprofile {
+	border-color: transparent
+}
+.post-buttons {
+	right: 55px !important;
+}
 }
 @media (max-width: 500px) {
 .quick-links .dropdown-trigger span {
@@ -957,6 +999,7 @@ dl.row-item {
 .navigation-bar-top {
 	 justify-content: flex-start;
 }
+
 }
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
 {
@@ -975,7 +1018,6 @@ dl.row-item {
   margin: 0 5px 0 25px;
   border: 0;
   background: url("./images/buttoncenter.png");
-  transition: background-position 1s;
   padding: 0;
   border-radius: 0;
   box-shadow: none;
@@ -990,8 +1032,6 @@ dl.row-item {
   top: 0;
   width: 25px;
   height: 37px;
-  transition: background-position 1s;
-  
 }
 .action-bar .btn::before {
   left: -25px;
@@ -1077,7 +1117,7 @@ dl.row-item {
     padding: 0;
 }
 .online2 {
-    z-index: 100;
+    z-index: 1;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -1139,4 +1179,45 @@ dl.row-item {
   right: 0;
   background: url("./images/centre-after.png");
   background-repeat: repeat-y;
+}
+.action-bar input.search {
+    background-color: #222222;
+    border-color: #1F3C6B;
+    color: #ccd5e4;
+}
+
+.inputbox:-moz-placeholder {
+	color: #c6d5e4;
+}
+
+.inputbox::-webkit-input-placeholder {
+	color: #c6d5e4;
+}
+.attachbox dd {
+    border-top-color: #000000;
+}
+#preview .inner, .topicreview .inner {
+    background: #1f3c6b;
+    border: none;
+}
+fieldset.polls dl {
+    border-top-color: #000000;
+    color: #d8dee8;
+}
+.phpbb_alert {
+    background-color: #1f3c6b;
+    border-color: #1f1f1f;
+}
+.phpbb_alert .icon {
+    color: #1f3c6b;
+}
+@media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
+.wrap {
+    margin: 0 auto;
+}
+}
+@media (max-width: 430px) {
+	.stat-block h3 {
+		background-position: top right;
+	}
 }
