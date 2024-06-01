@@ -51,7 +51,9 @@
 html {
 	background-color: #252525;
 }
-
+html {
+	background-color: #252525;	
+}
 body {
 	color: #c8d5e9;
 	background-color: #252525;
@@ -828,6 +830,9 @@ a.header-avatar span:after {
 .navigation .active-subsection a:hover {
 	color: #fff;
 }
+.navigation .active-subsection a:hover{
+	color: #fff;
+}
 
 /* Buttons */
 a.button2, input.button2, input.button3 {
@@ -874,7 +879,11 @@ a.button1, input.button1, input.button3, a.button2, input.button2 {
 	border: none;
 	background-color: transparent;
 }
-
+.nav-footer li a.button {
+	background-image: none;
+    border: none;
+    background-color: transparent;
+}
 .tabs .tab > a, tabs .tab > a:hover, .minitabs .tab > a {
 	box-shadow: none;
 	color: #c8d5e9;
@@ -1154,6 +1163,13 @@ dl.row-item {
 	background-size: 21px;
 }
 
+.postprofile dt, .avatar img {
+	margin: auto;
+}
+
+.postprofile .avatar {
+	float: none;
+}
 .postprofile dt, .avatar img {
 	margin: auto;
 }

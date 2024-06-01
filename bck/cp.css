@@ -299,6 +299,15 @@ ol.def-rules li {
 .pmlist li.bg2 {
 	padding: 0 3px;
 }
+<<<<<<< HEAD:bck/cp.css
+=======
+/* DEPRECATED 3.2.6
+.pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+*/
+>>>>>>> df14d6ef5988273b8f9f4d2f429b9bb201f6bdb0:theme/cp.css
 
 .pmlist li.pm_message_reported_colour, .pm_message_reported_colour,
 .pmlist li.pm_marked_colour, .pm_marked_colour,
