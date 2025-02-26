@@ -118,6 +118,7 @@ function calcWidth() {
     var lastItem = $('#main > li:not(.more)').last();
     lastItem.attr('data-width', lastItem.outerWidth(true));
     lastItem.prependTo($('#main .more ul'));
+	lastItem.removeClass('nav-button-end')
     calcWidth();
   } else {
     var firstMoreElement = $('#main li.more li').first();
