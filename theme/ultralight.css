@@ -775,6 +775,10 @@ a.header-avatar img {
 	background-position: 0% 0%, 100% 0%, 0% 0%;
 }
 
+.nav-button .icon {
+	font-size: 11px;
+}
+
 .nav-button-front {
 	background-image: url("./images/navbuttonfrontbefore.png"), url('./images/navbuttonfrontafter.png'), url('./images/navbuttoncenter.png');
 }
