@@ -685,6 +685,7 @@ fieldset.quick-login input.inputbox {
 	font-size: 12px;
 	margin-right: 0;
 	padding-inline: 10px;
+	padding-block: 7px;
 }
 
 .navigation-bar-top a:hover {
@@ -768,7 +769,6 @@ a.header-avatar img {
 
 .nav-button {
 	position: relative;
-	padding-block: 7px;
 	/* allow for the pseudo-elements which do not have layout due to absolute positioning */
 	background-image: url("./images/navbuttonbefore.png"), url("./images/navbuttonafter.png"), url("./images/navbuttoncenter.png");
 	background-repeat: no-repeat, no-repeat, repeat;
@@ -806,10 +806,8 @@ a.header-avatar span:after {
 }
 
 .badge {
-	top: -9px;
-	position: absolute;
+	top: -3px;
 	right: 0;
-	opacity: 1;
 }
 
 .more .badge {
