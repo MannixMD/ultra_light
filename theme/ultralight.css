@@ -1381,38 +1381,15 @@ only screen and (max-device-width: 900px) {
 .page-body,
 .page-footer {
 	position: relative;
-	background: url("./images/centre-center.png");
-	background-repeat: repeat;
+	background: url("./images/centre-before.png"), url("./images/centre-after.png"), url("./images/centre-center.png");
+	background-repeat: repeat-y, repeat-y, repeat;
 	margin: 0 auto;
 	padding: 2px 12px 12px;
 	clear: both;
 	width: auto;
+	background-position: 0 0, 100% 0, 0 0;
 }
 
-.page-body::before,
-.page-footer::before,
-.page-body::after,
-.page-footer::after {
-	content: ' ';
-	position: absolute;
-	top: 0;
-	width: 8px;
-	height: 100%;
-}
-
-.page-body::before,
-.page-footer::before {
-	left: 0;
-	background: url("./images/centre-before.png");
-	background-repeat: repeat-y;
-}
-
-.page-body::after,
-.page-footer::after {
-	right: 0;
-	background: url("./images/centre-after.png");
-	background-repeat: repeat-y;
-}
 
 .action-bar input.search {
 	background-color: #222222;
