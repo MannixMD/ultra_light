@@ -779,11 +779,11 @@ a.header-avatar img {
 	font-size: 11px;
 }
 
-.nav-button-front {
+#main>.nav-button-front {
 	background-image: url("./images/navbuttonfrontbefore.png"), url('./images/navbuttonfrontafter.png'), url('./images/navbuttoncenter.png');
 }
 
-.nav-button-end {
+#main>.nav-button-end {
 	background-image: url("./images/navbuttonendbefore.png"), url('./images/navbuttonendafter.png'), url('./images/navbuttoncenter.png');
 }
 
