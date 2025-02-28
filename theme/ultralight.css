@@ -775,10 +775,6 @@ a.header-avatar img {
 	background-position: 0% 0%, 100% 0%, 0% 0%;
 }
 
-.nav-button .icon {
-	font-size: 11px;
-}
-
 #main>.nav-button-front {
 	background-image: url("./images/navbuttonfrontbefore.png"), url('./images/navbuttonfrontafter.png'), url('./images/navbuttoncenter.png');
 }
@@ -790,6 +786,10 @@ a.header-avatar img {
 .nav-button:hover {
 	background-position: 0% 100%, 100% 100%, 100% 100%;
 	transition: background-position 1s;
+}
+
+.nav-button .icon {
+	font-size: 13px;
 }
 
 
@@ -806,14 +806,12 @@ a.header-avatar span:after {
 }
 
 .badge {
-	top: -3px;
-	right: 0;
+	position: unset;
+	padding: 1px 6px;
+	float: none;
+	border-radius: 3px;
 }
 
-.more .badge {
-	top: -2px;
-	left: -15px;
-}
 
 .navigation-bar-top .dropdown li {
 	display: initial;
