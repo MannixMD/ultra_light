@@ -88,23 +88,7 @@
 		})(jQuery);
 	</script>
 {% endif %}
-{% if S_NOTIFICATIONS_DISPLAY and S_DISPLAY_PM %}
-<script>
-$(window).resize(function() {
 
-  if ($(this).width() < 500) {
-
-    $('.hide-name').hide();
-
-  } else {
-
-    $('.hide-name').show();
-
-    }
-
-});
-</script>
-{% endif %}
 <script>
 function calcWidth() {
   var navwidth = 0;
